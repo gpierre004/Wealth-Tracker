@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="u9v0w1x2y3z4567890123456789012" label="Portfolio Position" max_length="40" name="x_1796514_invest_0_invest_position" type="collection">
+        <element label="Portfolio" max_length="32" name="u_portfolio" type="reference" reference="x_1796514_invest_0_invest_portfolio"/>
+        <element label="Company" max_length="32" name="u_company" type="reference" reference="x_1796514_invest_0_invest_company"/>
+        <element label="Quantity Held" max_length="40" name="u_quantity_held" type="integer"/>
+        <element label="Average Cost Basis" max_length="20" name="u_average_cost_basis" type="currency"/>
+        <element label="Current Market Value" max_length="20" name="u_current_market_value" type="currency"/>
+        <element label="Unrealized Gain/Loss" max_length="20" name="u_unrealized_gain_loss" type="currency"/>
+        <element label="Last Updated" max_length="40" name="u_last_updated" type="glide_date_time"/>
+    </element>
+</database>

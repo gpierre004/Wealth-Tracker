@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f0g1h2i3j4k5678901234567890123" label="Trade" max_length="40" name="x_1796514_invest_0_invest_trade" type="collection">
+        <element label="Portfolio" max_length="32" name="u_portfolio" type="reference" reference="x_1796514_invest_0_invest_portfolio"/>
+        <element label="Company" max_length="32" name="u_company" type="reference" reference="x_1796514_invest_0_invest_company"/>
+        <element choice="2" label="Type" max_length="40" name="u_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Buy" sequence="100" value="buy"/>
+                <element inactive_on_update="false" label="Sell" sequence="200" value="sell"/>
+            </choice>
+        </element>
+        <element label="Quantity" max_length="40" name="u_quantity" type="integer"/>
+        <element label="Price" max_length="20" name="u_price" type="currency"/>
+        <element label="Date" max_length="40" name="u_date" type="glide_date"/>
+        <element label="Total Amount" max_length="20" name="u_total_amount" type="currency"/>
+    </element>
+</database>

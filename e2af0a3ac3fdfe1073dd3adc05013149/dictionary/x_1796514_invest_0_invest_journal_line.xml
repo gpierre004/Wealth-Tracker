@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c1d2e3f4g5h67890123456789012345" label="Journal Line" max_length="40" name="x_1796514_invest_0_invest_journal_line" type="collection">
+        <element label="Journal Entry" max_length="32" name="u_journal_entry" type="reference" reference="x_1796514_invest_0_invest_journal"/>
+        <element label="Account" max_length="32" name="u_account" type="reference" reference="x_1796514_invest_0_invest_account"/>
+        <element label="Debit" max_length="20" name="u_debit" type="currency"/>
+        <element label="Credit" max_length="20" name="u_credit" type="currency"/>
+        <element label="Line Number" max_length="40" name="u_line_number" type="integer"/>
+        <element label="Description" max_length="200" name="u_description" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>SNP500DataIngestion</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Script to fetch and parse S&amp;P 500 data from Wikipedia</description>
+        <name>SNP500DataIngestion</name>
+        <script><![CDATA[var SNP500DataIngestion = Class.create();
+SNP500DataIngestion.prototype = {
+    initialize: function() {
+    },
+
+    ingestData: function() {
+        try {
+            // Make HTTP request to Wikipedia
+            var request = new sn_ws.RESTMessageV2();
+            request.setHttpMethod('GET');
+            request.setEndpoint('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies');
+            request.setRequestHeader('User-Agent', 'ServiceNow/1.0');
+
+            var response = request.execute();
+            var responseBody = response.getBody();
+            var statusCode = response.getStatusCode();
+
+            if (statusCode != 200) {
+                gs.error('Failed to fetch S&P 500 data. Status: ' + statusCode);
+                return;
+            }
+
+            // Parse HTML table
+            var companies = this.parseWikipediaTable(responseBody);
+
+            // Update company records
+            this.updateCompanyRecords(companies);
+
+            gs.info('S&P 500 data ingestion completed successfully');
+
+        } catch (e) {
+            gs.error('Error in S&P 500 data ingestion: ' + e.message);
+        }
+    },
+
+    parseWikipediaTable: function(html) {
+        var companies = [];
+
+        // Use regex to find the table rows
+        var tableRegex = /<table[^>]*class="[^"]*wikitable[^"]*"[^>]*>(.*?)<\/table>/gi;
+        var tableMatch = tableRegex.exec(html);
+
+        if (!tableMatch) {
+            gs.error('Could not find wikitable in HTML');
+            return companies;
+        }
+
+        var tableHtml = tableMatch[1];
+
+        // Find table rows
+        var rowRegex = /<tr[^>]*>(.*?)<\/tr>/gi;
+        var rowMatch;
+
+        while ((rowMatch = rowRegex.exec(tableHtml)) !== null) {
+            var rowHtml = rowMatch[1];
+
+            // Skip header row
+            if (rowHtml.indexOf('<th') !== -1) continue;
+
+            // Extract cells
+            var cellRegex = /<td[^>]*>(.*?)<\/td>/gi;
+            var cells = [];
+            var cellMatch;
+
+            while ((cellMatch = cellRegex.exec(rowHtml)) !== null) {
+                var cellContent = cellMatch[1];
+                // Remove HTML tags
+                cellContent = cellContent.replace(/<[^>]*>/g, '').trim();
+                cells.push(cellContent);
+            }
+
+            if (cells.length >= 3) {
+                var company = {
+                    symbol: cells[0],
+                    name: cells[1],
+                    sector: cells[2]
+                };
+                companies.push(company);
+            }
+        }
+
+        return companies;
+    },
+
+    updateCompanyRecords: function(companies) {
+        // First, mark all existing companies as inactive
+        var gr = new GlideRecord('x_1796514_invest_0_invest_company');
+        gr.addQuery('u_active', true);
+        gr.query();
+        while (gr.next()) {
+            gr.u_active = false;
+            gr.update();
+        }
+
+        // Insert or update companies
+        for (var i = 0; i < companies.length; i++) {
+            var company = companies[i];
+
+            var grCompany = new GlideRecord('x_1796514_invest_0_invest_company');
+            grCompany.addQuery('u_symbol', company.symbol);
+            grCompany.query();
+
+            if (grCompany.next()) {
+                // Update existing
+                grCompany.u_name = company.name;
+                grCompany.u_sector = company.sector;
+                grCompany.u_active = true;
+                grCompany.update();
+            } else {
+                // Insert new
+                grCompany.initialize();
+                grCompany.u_symbol = company.symbol;
+                grCompany.u_name = company.name;
+                grCompany.u_sector = company.sector;
+                grCompany.u_active = true;
+                grCompany.u_country = 'United States'; // Assuming US
+                grCompany.u_industry = ''; // Can be set later
+                grCompany.insert();
+            }
+        }
+    },
+
+    type: 'SNP500DataIngestion'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>guyb</sys_created_by>
+        <sys_created_on>2025-12-17 19:00:00</sys_created_on>
+        <sys_id>p0q1r2s3t4u5678901234567890123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SNP500DataIngestion</sys_name>
+        <sys_package display_value="Investment Tracker" source="x_1796514_invest_0">e2af0a3ac3fdfe1073dd3adc05013149</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Investment Tracker">e2af0a3ac3fdfe1073dd3adc05013149</sys_scope>
+        <sys_update_name>sys_script_include_p0q1r2s3t4u5678901234567890123</sys_update_name>
+        <sys_updated_by>guyb</sys_updated_by>
+        <sys_updated_on>2025-12-17 19:00:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

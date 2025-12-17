@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="l9m0n1o2p3q45678901234567890123" label="Portfolio" max_length="40" name="x_1796514_invest_0_invest_portfolio" type="collection">
+        <element label="User" max_length="32" name="u_user" type="reference" reference="sys_user"/>
+        <element label="Name" max_length="100" name="u_name" type="string"/>
+        <element label="Created Date" max_length="40" name="u_created_date" type="glide_date"/>
+        <element label="Total Value" max_length="20" name="u_total_value" type="currency"/>
+    </element>
+</database>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Investment Company">61aa9e72c371325073dd3adc05013193</application>
+        <filter/>
+        <name>Invest Companies</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_1796514_invest_0.invest_company_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>guyb</sys_created_by>
+        <sys_created_on>2025-12-17 17:09:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5aa9e72c371325073dd3adc05013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Invest Companies</sys_name>
+        <sys_package display_value="Investment Tracker" source="x_1796514_invest_0">e2af0a3ac3fdfe1073dd3adc05013149</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Investment Tracker">e2af0a3ac3fdfe1073dd3adc05013149</sys_scope>
+        <sys_update_name>sys_ui_module_e5aa9e72c371325073dd3adc05013198</sys_update_name>
+        <sys_updated_by>guyb</sys_updated_by>
+        <sys_updated_on>2025-12-17 17:09:59</sys_updated_on>
+        <table>x_1796514_invest_0_invest_company</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

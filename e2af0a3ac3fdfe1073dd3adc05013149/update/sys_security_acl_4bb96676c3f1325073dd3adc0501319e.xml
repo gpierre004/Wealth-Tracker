@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_1796514_invest_0_invest_journal</description>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_1796514_invest_0_invest_journal</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>guyb</sys_created_by>
+        <sys_created_on>2025-12-17 18:15:53</sys_created_on>
+        <sys_id>4bb96676c3f1325073dd3adc0501319e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1796514_invest_0_invest_journal</sys_name>
+        <sys_package display_value="Investment Tracker" source="x_1796514_invest_0">e2af0a3ac3fdfe1073dd3adc05013149</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Investment Tracker">e2af0a3ac3fdfe1073dd3adc05013149</sys_scope>
+        <sys_update_name>sys_security_acl_4bb96676c3f1325073dd3adc0501319e</sys_update_name>
+        <sys_updated_by>guyb</sys_updated_by>
+        <sys_updated_on>2025-12-17 18:15:53</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>guyb</sys_created_by>
+        <sys_created_on>2025-12-17 16:34:07</sys_created_on>
+        <sys_id>c07296fec3fdfe1073dd3adc05013166</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1796514_invest_0_price_history.x_1796514_invest_0.user</sys_name>
+        <sys_package display_value="Investment Tracker" source="x_1796514_invest_0">e2af0a3ac3fdfe1073dd3adc05013149</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Investment Tracker">e2af0a3ac3fdfe1073dd3adc05013149</sys_scope>
+        <sys_security_acl display_value="x_1796514_invest_0_price_history">c47296fec3fdfe1073dd3adc05013150</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c07296fec3fdfe1073dd3adc05013166</sys_update_name>
+        <sys_updated_by>guyb</sys_updated_by>
+        <sys_updated_on>2025-12-17 16:34:07</sys_updated_on>
+        <sys_user_role display_value="x_1796514_invest_0.user" name="x_1796514_invest_0.user">e6af0a3ac3fdfe1073dd3adc050131cc</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Investment Tracker">e2af0a3ac3fdfe1073dd3adc05013149</application>
+        <file_path/>
+        <instance_id>287fa74fdbda3d10199b172913961912</instance_id>
+        <instance_name>dev209256</instance_name>
+        <name>sys_security_acl_role_c07296fec3fdfe1073dd3adc05013166</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>guyb</sys_created_by><sys_created_on>2025-12-17 16:34:07</sys_created_on><sys_id>c07296fec3fdfe1073dd3adc05013166</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1796514_invest_0_price_history.x_1796514_invest_0.user</sys_name><sys_package display_value="Investment Tracker" source="x_1796514_invest_0">e2af0a3ac3fdfe1073dd3adc05013149</sys_package><sys_policy/><sys_scope display_value="Investment Tracker">e2af0a3ac3fdfe1073dd3adc05013149</sys_scope><sys_security_acl display_value="x_1796514_invest_0_price_history">c47296fec3fdfe1073dd3adc05013150</sys_security_acl><sys_update_name>sys_security_acl_role_c07296fec3fdfe1073dd3adc05013166</sys_update_name><sys_updated_by>guyb</sys_updated_by><sys_updated_on>2025-12-17 16:34:07</sys_updated_on><sys_user_role display_value="x_1796514_invest_0.user" name="x_1796514_invest_0.user">e6af0a3ac3fdfe1073dd3adc050131cc</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1568781351</payload_hash>
+        <record_name>x_1796514_invest_0_price_history.x_1796514_invest_0.user</record_name>
+        <reverted_from/>
+        <source>26af0a3ac3fdfe1073dd3adc050131bd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>guyb</sys_created_by>
+        <sys_created_on>2025-12-17 16:34:07</sys_created_on>
+        <sys_id>8c7296fec3fdfe1073dd3adc0501316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b2d2968c10000001</sys_recorded_at>
+        <sys_updated_by>guyb</sys_updated_by>
+        <sys_updated_on>2025-12-17 16:34:07</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>4c7296fe4bfdfe10e55a4ae687af5d6d</update_guid>
+        <update_guid_history>4c7296fe4bfdfe10e55a4ae687af5d6d:1568781351</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1796514_invest_0_price_history.x_1796514_invest_0.user">8f3a5a32c371325073dd3adc0501316b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>guyb</sys_created_by>
+        <sys_created_on>2025-12-17 17:08:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>c614f701be8b46668b1efb4b89e76f24</sys_id>
+        <sys_metadata>c07296fec3fdfe1073dd3adc05013166</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1796514_invest_0_price_history.x_1796514_invest_0.user</sys_name>
+        <sys_package display_value="Investment Tracker" source="x_1796514_invest_0">e2af0a3ac3fdfe1073dd3adc05013149</sys_package>
+        <sys_parent display_value="">c47296fec3fdfe1073dd3adc05013150</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Investment Tracker">e2af0a3ac3fdfe1073dd3adc05013149</sys_scope>
+        <sys_scope_delete display_value="">113c2e690e174e5a9b9c77fb9da27e84</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_c07296fec3fdfe1073dd3adc05013166</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_c07296fec3fdfe1073dd3adc05013166">8c7296fec3fdfe1073dd3adc0501316e</sys_update_version>
+        <sys_updated_by>guyb</sys_updated_by>
+        <sys_updated_on>2025-12-17 17:08:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

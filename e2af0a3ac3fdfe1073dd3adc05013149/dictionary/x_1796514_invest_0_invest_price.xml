@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b44cde76c371325073dd3adc0501310f" label="Stock Price" max_length="40" name="x_1796514_invest_0_invest_price" type="collection">
+        <element label="Trading volume" max_length="40" name="u_volume" type="integer"/>
+        <element label="Closing price" max_length="20" name="u_close_price" type="decimal"/>
+        <element label="Trading date" max_length="40" name="u_date" type="glide_date"/>
+        <element label="Opening price" max_length="20" name="u_open_price" type="decimal"/>
+        <element label="Daily high" max_length="20" name="u_high_price" type="decimal"/>
+        <element label="Company" max_length="32" name="u_company" reference="x_1796514_invest_0_invest_company" type="reference"/>
+        <element label="Daily low" max_length="20" name="u_low_price" type="decimal"/>
+        <index name="index">
+            <element name="u_company"/>
+        </index>
+    </element>
+</database>

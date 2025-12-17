@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="eb792e36c3f1325073dd3adc0501317e" label="Journal Entry" max_length="40" name="x_1796514_invest_0_invest_journal" type="collection">
+        <element choice="1" label="State" max_length="40" name="u_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="300" value="cancelled"/>
+                <element inactive_on_update="false" label="Draft" sequence="100" value="draft"/>
+                <element inactive_on_update="false" label="Posted" sequence="200" value="posted"/>
+            </choice>
+        </element>
+        <element label="Date" max_length="40" name="u_date" type="glide_date"/>
+        <element label="Total debit" max_length="20" name="u_total_debit" type="currency"/>
+        <element label="Number" max_length="40" name="u_number" type="integer"/>
+        <element label="Total credit" max_length="20" name="u_total_credit" type="currency"/>
+        <element label="Description" max_length="200" name="u_description" type="string"/>
+    </element>
+</database>

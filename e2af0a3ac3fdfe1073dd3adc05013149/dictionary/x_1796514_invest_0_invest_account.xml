@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="05f5e23ec3b1325073dd3adc05013173" label="Account" max_length="40" name="x_1796514_invest_0_invest_account" type="collection">
+        <element label="Description" max_length="100" name="u_description" type="string"/>
+        <element label="Account name" max_length="20" name="u_name" type="string"/>
+        <element choice="3" label="Type" max_length="40" name="u_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Equity" value="equity"/>
+                <element inactive_on_update="false" label="Revenue" value="revenue"/>
+                <element inactive_on_update="false" label="Expense" value="expense"/>
+                <element inactive_on_update="false" label="Liability" value="liability"/>
+                <element inactive_on_update="false" label="Asset" value="asset"/>
+            </choice>
+        </element>
+        <element label="Balance" max_length="20" name="u_balance" type="currency"/>
+    </element>
+</database>

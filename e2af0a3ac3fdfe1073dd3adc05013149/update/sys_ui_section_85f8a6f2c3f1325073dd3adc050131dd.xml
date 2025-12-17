@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="85f8a6f2c3f1325073dd3adc050131dd" sys_domain="global" table="x_1796514_invest_0_invest_account" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>guyb</sys_created_by>
+            <sys_created_on>2025-12-17 18:12:29</sys_created_on>
+            <sys_id>85f86af2c3f1325073dd3adc0501318f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1796514_invest_0_invest_account" sys_domain="global" view="Default view">85f8a6f2c3f1325073dd3adc050131dd</sys_ui_section>
+            <sys_updated_by>guyb</sys_updated_by>
+            <sys_updated_on>2025-12-17 18:12:29</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_name</element>
+            <position>1</position>
+            <sys_created_by>guyb</sys_created_by>
+            <sys_created_on>2025-12-17 18:12:29</sys_created_on>
+            <sys_id>8df86af2c3f1325073dd3adc05013190</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1796514_invest_0_invest_account" sys_domain="global" view="Default view">85f8a6f2c3f1325073dd3adc050131dd</sys_ui_section>
+            <sys_updated_by>guyb</sys_updated_by>
+            <sys_updated_on>2025-12-17 18:12:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>guyb</sys_created_by>
+            <sys_created_on>2025-12-17 18:12:29</sys_created_on>
+            <sys_id>0df86af2c3f1325073dd3adc05013191</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1796514_invest_0_invest_account" sys_domain="global" view="Default view">85f8a6f2c3f1325073dd3adc050131dd</sys_ui_section>
+            <sys_updated_by>guyb</sys_updated_by>
+            <sys_updated_on>2025-12-17 18:12:29</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_type</element>
+            <position>3</position>
+            <sys_created_by>guyb</sys_created_by>
+            <sys_created_on>2025-12-17 18:12:29</sys_created_on>
+            <sys_id>89f86af2c3f1325073dd3adc05013192</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1796514_invest_0_invest_account" sys_domain="global" view="Default view">85f8a6f2c3f1325073dd3adc050131dd</sys_ui_section>
+            <sys_updated_by>guyb</sys_updated_by>
+            <sys_updated_on>2025-12-17 18:12:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>guyb</sys_created_by>
+            <sys_created_on>2025-12-17 18:12:29</sys_created_on>
+            <sys_id>09f86af2c3f1325073dd3adc05013193</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1796514_invest_0_invest_account" sys_domain="global" view="Default view">85f8a6f2c3f1325073dd3adc050131dd</sys_ui_section>
+            <sys_updated_by>guyb</sys_updated_by>
+            <sys_updated_on>2025-12-17 18:12:29</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_description</element>
+            <position>5</position>
+            <sys_created_by>guyb</sys_created_by>
+            <sys_created_on>2025-12-17 18:12:29</sys_created_on>
+            <sys_id>85f86af2c3f1325073dd3adc05013194</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1796514_invest_0_invest_account" sys_domain="global" view="Default view">85f8a6f2c3f1325073dd3adc050131dd</sys_ui_section>
+            <sys_updated_by>guyb</sys_updated_by>
+            <sys_updated_on>2025-12-17 18:12:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_balance</element>
+            <position>6</position>
+            <sys_created_by>guyb</sys_created_by>
+            <sys_created_on>2025-12-17 18:12:29</sys_created_on>
+            <sys_id>05f86af2c3f1325073dd3adc05013195</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1796514_invest_0_invest_account" sys_domain="global" view="Default view">85f8a6f2c3f1325073dd3adc050131dd</sys_ui_section>
+            <sys_updated_by>guyb</sys_updated_by>
+            <sys_updated_on>2025-12-17 18:12:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1796514_invest_0_invest_account</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>guyb</sys_created_by>
+            <sys_created_on>2025-12-17 18:12:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>85f8a6f2c3f1325073dd3adc050131dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1796514_invest_0_invest_account</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Investment Tracker" source="x_1796514_invest_0">e2af0a3ac3fdfe1073dd3adc05013149</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Investment Tracker">e2af0a3ac3fdfe1073dd3adc05013149</sys_scope>
+            <sys_update_name>sys_ui_section_85f8a6f2c3f1325073dd3adc050131dd</sys_update_name>
+            <sys_updated_by>guyb</sys_updated_by>
+            <sys_updated_on>2025-12-17 18:12:29</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

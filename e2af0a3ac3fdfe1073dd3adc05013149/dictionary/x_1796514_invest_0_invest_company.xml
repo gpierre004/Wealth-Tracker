@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ab5a1672c371325073dd3adc05013173" label="Company" max_length="40" name="x_1796514_invest_0_invest_company" type="collection">
+        <element label="Sector" max_length="50" name="u_sector" type="string"/>
+        <element label="Industry" max_length="50" name="u_industry" type="string"/>
+        <element label="Name" max_length="100" name="u_name" type="string"/>
+        <element label="Country" max_length="50" name="u_country" type="string"/>
+        <element label="Symbol" mandatory="true" max_length="10" name="u_symbol" type="string"/>
+        <element label="Active" max_length="6" name="u_active" type="boolean"/>
+    </element>
+</database>
